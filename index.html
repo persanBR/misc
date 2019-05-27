@@ -1,0 +1,36 @@
+<html lang="pt-br">
+<head>
+    <link rel=stylesheet type="text/css" href="./style.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Formulario One</title>
+</head>
+<body>
+	<section>
+		<form class="container__userinfo">
+			<ul class="forminfo">
+					<li>
+							Nome 
+							<input type="text" placeholder="Digite seu nome ou apelido" id="forminfo__username" minlength="3" maxlength="50" value="Alan Pereira" required>
+					</li>
+					<li>
+							E-mail
+							<input type="email" placeholder="Digite seu melhor e-mail" id="forminfo__email" value="mailfoo@bar.com" required>
+					</li>
+					<li>Site
+									<input type="text" placeholder="Digite seu site ou um link para sua rede social" id="forminfo__site" minlength="5" value="foo@bar.com" required>
+					</li>
+					<li>
+							Comentário <!--colocar um contador de caracter aqui informando que esta acabando-->
+							<textarea id="forminfo__textarea" minlength="1" maxlength="100" required>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste numquam eveniet eum voluptatibus, quo voluptatem vel ea delectus? Quis a sint ex nulla veniam, suscipit quidem mollitia praesentium voluptas!</textarea>
+					</li>
+					<div class="forminfo__btn">
+							<button type="reset" class="btncleancolor">Limpar Campos</button>
+							<button type="button" onclick="submitFunction()">Enviar comentário</button>
+					</div>
+			</ul>
+		</form>
+	</section>
+</body>
+</html>
